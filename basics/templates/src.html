@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Values</title>
+</head>
+<body>
+    <h1>Enter Values</h1><BODY bgcolor=”navy”>
+    <form method="POST" >
+        {% csrf_token %}
+        <label for="fLength">fLength:</label><br>
+        <input type="number" step="0.00001" id="fLength" name="fLength"><br><br>
+
+        <label for="fWidth">fWidth:</label><br>
+        <input type="number" step="0.00001" id="fWidth" name="fWidth"><br><br>
+
+        <label for="fSize">fSize:</label><br>
+        <input type="number" step="0.00001" id="fSize" name="fSize"><br><br>
+
+        <label for="fConc">fConc:</label><br>
+        <input type="number" step="0.00001" id="fConc" name="fConc"><br><br>
+
+        <label for="fConc1">fConc1:</label><br>
+        <input type="number" step="0.00001" id="fConc1" name="fConc1"><br><br>
+
+        <label for="fAsym">fAsym:</label><br>
+        <input type="number" step="0.00001" id="fAsym" name="fAsym"><br><br>
+
+        <label for="fM3Long">fM3Long:</label><br>
+        <input type="number" step="0.00001" id="fM3Long" name="fM3Long"><br><br>
+
+        <label for="fM3Trans">fM3Trans:</label><br>
+        <input type="number" step="0.00001" id="fM3Trans" name="fM3Trans"><br><br>
+
+        <label for="fAlpha">fAlpha:</label><br>
+        <input type="number" step="0.00001" id="fAlpha" name="fAlpha"><br><br>
+
+        <label for="fDist">fDist:</label><br>
+        <input type="number" step="0.00001" id="fDist" name="fDist"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <h1>
+        {{info}}
+    </h1>
+</body>
+</html>
